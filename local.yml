@@ -3,10 +3,15 @@
   user: root
   connection: local
   tasks:
+    - debug: 
+        msg:  "{{ the_secret }}"
+    - pause:
     - name: dodanie repo
       apt_repository:
         repo: deb http://repo.netis.pl/ubuntu bionic main
         state: present
+    - hostname:
+        name: kasaX
 
     - name: installacja paczek
       apt:
@@ -29,7 +34,8 @@
         - gawk
         - lynx
         - cups-bsd
-        - xkasnet-client
+        - xkasnet-client-notouch
+        - kasnet-server  
         - xkasnet-client-autostart
         - xinput-calibrator
         - curl
