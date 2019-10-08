@@ -1,19 +1,39 @@
-- name: Ansible Example Pull Mode
+- name: Ansible instalacja kasy
   hosts: localhost
   user: root
   connection: local
   tasks:
-    - debug: 
-        msg:  "{{ the_secret }}"
-    - pause:
+    - include_vars: key_vault.yml
+
+    - copy: content="{{  secret_key }}" dest=/tmp/klucz.apt
+
+    - name: Dodanie klucza do apta
+      apt_key:
+        data: "{{ lookup('file', '/tmp/klucz.apt') }}"
+        state: present
+
     - name: dodanie repo
       apt_repository:
         repo: deb http://repo.netis.pl/ubuntu bionic main
         state: present
-    - hostname:
+
+    - name: Zmiana hostname na kasaX    
+      hostname:
         name: kasaX
 
-    - name: installacja paczek
+    - name: Usuniecie paczek gnome, kde, lightdm
+      apt:
+        name: "{{ item }}"
+        state: absent
+        force: yes
+        update_cache: yes
+      with_items:
+        - gdm3
+        - sddm
+        - lightdm  
+        - gdm  
+
+    - name: Installacja paczek
       apt:
         name: "{{ item }}"
         state: present
@@ -44,3 +64,5 @@
         - rsh-client
         - rdate
         - setserial
+    - debug:
+        msg: "Zrestartuj komputer"
