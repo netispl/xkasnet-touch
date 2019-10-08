@@ -1,0 +1,40 @@
+- name: Ansible Example Pull Mode
+  hosts: localhost
+  user: root
+  connection: local
+  tasks:
+    - name: dodanie repo
+      apt_repository:
+        repo: deb http://repo.netis.pl/ubuntu bionic main
+        state: present
+
+    - name: installacja paczek
+      apt:
+        name: "{{ item }}"
+        state: present
+        force: yes
+        update_cache: yes
+      with_items:
+        - curl
+        - mariadb-server
+        - openssh-server
+        - build-essential
+        - gpm
+        - vim
+        - joe
+        - unzip
+        - zip
+        - gdb
+        - rsh-client
+        - gawk
+        - lynx
+        - cups-bsd
+        - xkasnet-client
+        - xkasnet-client-autostart
+        - xinput-calibrator
+        - curl
+        - setserial
+        - nmap
+        - rsh-client
+        - rdate
+        - setserial
