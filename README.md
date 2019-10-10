@@ -1,5 +1,5 @@
 
-## Table of contents
+## Spis
 * [Informacje](#Informacje)
 * [Wymagania](#Wymagania)
 * [Instalacja playbooka](#Instalacja)
@@ -24,6 +24,4 @@ Instalacja projektu (wymaga podania hasła do odszyfrowania klucza):
 
 ```
 $ ansible-pull --vault-id @prompt -i hosts -U http://github.com/netispl/xkasnet
-$ npm install
-$ npm start
 ```
