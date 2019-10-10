@@ -12,7 +12,7 @@
         data: "{{ lookup('file', '/tmp/klucz.apt') }}"
         state: present
 
-    - name: dodanie repo
+    - name: Dodanie repo
       apt_repository:
         repo: deb http://repo.netis.pl/ubuntu bionic main
         state: present
