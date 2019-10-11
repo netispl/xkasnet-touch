@@ -54,7 +54,7 @@
         - gawk
         - lynx
         - cups-bsd
-        - xkasnet-client-notouch
+        - xkasnet-client
         - kasnet-server  
         - xkasnet-client-autostart
         - xinput-calibrator
