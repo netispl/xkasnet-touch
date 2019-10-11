@@ -66,4 +66,4 @@
         - setserial
 
     - name: Restart komputera
-      reboot:      
+      command: reboot
