@@ -1,4 +1,4 @@
-- name: Ansible instalacja kasy
+- name: Ansible instalacja kasy na komputerze z ekranem dotykowym
   hosts: localhost
   user: root
   connection: local

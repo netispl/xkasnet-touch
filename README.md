@@ -5,7 +5,7 @@
 * [Instalacja playbooka](#Instalacja)
 
 ## Informacje
-Playbook do instalacji xkasaneta. Instalowana wersja xkasnet-klient-notouch. Wczesniej musi być zainstalowany system operacyjny ubuntu 18.04.
+Playbook do instalacji xkasaneta na ekranie dotykowym. Instalowana wersja xkasnet-klient-notouch. Wczesniej musi być zainstalowany system operacyjny ubuntu 18.04.
 Ewentualnie można zainstalować system z innego playbooka:
 
 ansible-pull -i hosts -U http://github.com/netispl/wzorzec
@@ -23,5 +23,5 @@ $ apt-get install git ansible-pull --yes --force-yes
 Instalacja projektu (wymaga podania hasła do odszyfrowania klucza):
 
 ```
-$ ansible-pull --vault-id @prompt -i hosts -U http://github.com/netispl/xkasnet
+$ ansible-pull --vault-id @prompt -i hosts -U http://github.com/netispl/xkasnet-touch
 ```
