@@ -64,5 +64,6 @@
         - rsh-client
         - rdate
         - setserial
-    - debug:
-        msg: "Zrestartuj komputer"
+
+    - name: Restart komputera
+        reboot:      
