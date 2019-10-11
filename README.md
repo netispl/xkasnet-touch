@@ -16,7 +16,7 @@ W celu odpalenia playbooka nalezy uruchomić (multiverse w niektorych dystybucja
 
 ```
 $ apt-add-repository multiverse
-$ apt-get install git ansible-pull --yes --force-yes
+$ apt-get install git ansible --yes --force-yes
 ```
 
 ## Instalacja
