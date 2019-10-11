@@ -27,7 +27,7 @@
         state: absent
         force: yes
         update_cache: yes
-      with_items:
+      loop:
         - gdm3
         - sddm
         - lightdm  
@@ -39,7 +39,7 @@
         state: present
         force: yes
         update_cache: yes
-      with_items:
+      loop:
         - curl
         - mariadb-server
         - openssh-server
