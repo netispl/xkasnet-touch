@@ -77,6 +77,8 @@
         force: yes
         update_cache: yes
       loop:
+        - zip
+        - openvpn
         - curl
         - mariadb-server
         - openssh-server
