@@ -27,3 +27,8 @@ Instalacja projektu (wymaga podania hasła do odszyfrowania klucza):
 ```
  ansible-pull --vault-id @prompt -i hosts -U http://github.com/netispl/xkasnet-touch
 ```
+
+## Dodatkowe informacje
+Razem z playbookiem dodawane są:
+ - vpn
+ - user ansiblenet
