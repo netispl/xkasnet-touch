@@ -10,6 +10,8 @@ Ewentualnie można zainstalować system z innego playbooka:
 
 ansible-pull -i hosts -U http://github.com/netispl/wzorzec
 
+Dotakowo dodawny jest user ansiblenet i vpn.
+
 ## Wymagania
 Testowane na Ubuntu 18.04 64 bit desktop
 http://releases.ubuntu.com/18.04/ubuntu-18.04.3-desktop-amd64.iso
@@ -28,7 +30,4 @@ Instalacja projektu (wymaga podania hasła do odszyfrowania klucza):
  ansible-pull --vault-id @prompt -i hosts -U http://github.com/netispl/xkasnet-touch
 ```
 
-## Dodatkowe informacje
-Razem z playbookiem dodawane są:
- - vpn
- - user ansiblenet
+
