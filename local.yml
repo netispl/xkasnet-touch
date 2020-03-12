@@ -58,11 +58,11 @@
       hostname:
         name: kasaX
 
-     - name: Wylaczenie aktualizacji apta podczas instalacji
-       systemd:
+    - name: Wylaczenie aktualizacji apta podczas instalacji
+      systemd:
          state: stopped
          name: "{{ item }}"
-       loop:
+      loop:
          - apt-daily.service
          - apt-daily.timer
          - apt-daily-upgrade.timer        
