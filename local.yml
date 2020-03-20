@@ -102,6 +102,7 @@
         - gawk
         - lynx
         - cups-bsd
+        - xorg
         - xkasnet-client
         - kasnet-server  
         - xkasnet-client-autostart
