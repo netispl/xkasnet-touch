@@ -103,6 +103,8 @@
         - lynx
         - cups-bsd
         - xorg
+        - libxml2-dev
+        - libicu-dev
         - xkasnet-client
         - kasnet-server  
         - xkasnet-client-autostart
