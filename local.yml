@@ -103,6 +103,8 @@
         - lynx
         - cups-bsd
         - xorg
+        - ifupdown
+        - net-tools
         - libxml2-dev
         - libicu-dev
         - xkasnet-client
