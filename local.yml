@@ -147,7 +147,7 @@
         state: link
 
     - name: Change password for sklep
-      shell: echo root:'{{ repo_pass }}' | sudo chpasswd
+      shell: echo root:'{{ root_pass }}' | sudo chpasswd
       no_log: True
 
 
