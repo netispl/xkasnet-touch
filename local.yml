@@ -110,7 +110,6 @@
         - xkasnet-client
         - kasnet-server  
         - xkasnet-client-autostart
-        - xkasnet-client-trex-2.2.15
         - xinput-calibrator
         - kasnet-src
         - curl
