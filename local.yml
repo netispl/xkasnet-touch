@@ -107,11 +107,11 @@
         - net-tools
         - libxml2-dev
         - libicu-dev
-        - xkasnet-client
-        - kasnet-server  
-        - xkasnet-client-autostart
+        - xkasnet-client-notouch-2.2.14
+        - kasnet-server-2.1.329
+        - xkasnet-client-autostart-2.2.14
         - xinput-calibrator
-        - kasnet-src
+        - kasnet-src-2.1.329
         - curl
         - setserial
         - nmap
