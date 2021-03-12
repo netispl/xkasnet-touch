@@ -107,7 +107,6 @@
         - net-tools
         - libxml2-dev
         - libicu-dev
-        - xkasnet-client-notouch-2.2.14
         - kasnet-server-2.1.329
         - xkasnet-client-autostart-2.2.14
         - xinput-calibrator
