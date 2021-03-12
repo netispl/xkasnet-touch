@@ -108,9 +108,10 @@
         - libxml2-dev
         - libicu-dev
         - kasnet-server-2.1.329
+        - kasnet-src-2.1.329
+        - xkasnet-client-2.2.14
         - xkasnet-client-autostart-2.2.14
         - xinput-calibrator
-        - kasnet-src-2.1.329
         - curl
         - setserial
         - nmap
