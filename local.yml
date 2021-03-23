@@ -180,6 +180,9 @@
          name: "{{ item }}"
       loop:
          - systemd-resolved.service                  
+         
+    - name: mysql update users
+      shell: mysql mysql -e "update user set plugin = '' where Host = 'localhost';"
 
 
     - name: Restart komputera
