@@ -107,8 +107,8 @@
         - net-tools
         - libxml2-dev
         - libicu-dev
-        - kasnet-server-2.1.329
-        - kasnet-src-2.1.329
+        - kasnet-server-2.1.333
+        - kasnet-src-2.1.333
         - xkasnet-client-2.2.14
         - xkasnet-client-autostart-2.2.14
         - xinput-calibrator
