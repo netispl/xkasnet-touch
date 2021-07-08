@@ -183,7 +183,15 @@
          
     - name: mysql update users
       shell: mysql mysql -e "update user set plugin = '' where Host = 'localhost';"
+      
+    - name: '/etc/default/grub - net.ifnames i biosdevname'
+      lineinfile:
+         path: /etc/default/grub
+         line: 'GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"'
+         regexp: '^GRUB_CMDLINE_LINUX=""'
 
+    - name: Update grub
+      shell: "update-grub"
 
     - name: Restart komputera
       command: reboot
