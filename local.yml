@@ -119,21 +119,7 @@
         - rdate
         - setserial
 
-    - unarchive:
-        src: keys.tgz
-        dest: /etc/openvpn/
- 
-    - name: "Create link /etc/openvpn/client -> /etc/openvpn/keys/client"
-      file:
-        src: /etc/openvpn/keys.4/client.4.101.conf
-        dest: /etc/openvpn/client.4.101.conf
-        state: link
- 
-    - name: Openvpn enable w systemd
-      systemd:
-         name: openvpn@client.4.101
-         state: started
-         enabled: yes
+
          
     - name: ModemManager disable w systemd
       systemd:
@@ -152,11 +138,6 @@
          path: /etc/hosts.allow
          line: "ALL:10."
  
-    - name: "Create link /etc/openvpn/client -> /etc/openvpn/keys/client"
-      file:
-        src: /etc/openvpn/keys.4/client.4.101.conf
-        dest: /etc/openvpn/client.4.101.conf
-        state: link
 
     - name: Change password for sklep
       shell: echo root:'{{ root_pass }}' | sudo chpasswd
